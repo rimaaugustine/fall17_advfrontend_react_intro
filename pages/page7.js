@@ -1,11 +1,31 @@
 import Footer from "../components/footer2"
 import Head from "next/head"
+import Card from "../components/card.js"
+
+
+const cards = [
+    {
+        image:"static/14", name:"", text: "",
+    },
+    {
+        image:"", name:"", text: "",
+    },
+    {
+        image:"", name:"", text: "",
+    },
+    {
+        image:"", name:"", text: "",
+    }
+
+]
 
 const Page = () => (
+
   <div>
     <Head>
       <title>My seventh page!</title>
       <link rel="stylesheet" href="static/main.css" />
+        <link rel="stylesheet" href="static/cards.css" />
       <meta name="description" content="Let's make the web great again" />
       <meta name="keywords" content="sample, react, demo, awesome" />
     </Head>
@@ -18,6 +38,12 @@ const Page = () => (
     <div className="yellow">This is a paragraph with yellow background.</div>
     <Footer text="Footer™ ©2017 Tiago Henriques" />
   </div>
+
+
+
+
 )
+
+
 
 export default Page
