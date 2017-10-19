@@ -1,0 +1,26 @@
+img {
+    max-width: 100%;
+}
+@media screen and (min-width: 480px) {
+    img {
+        align-items: center;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    h1 {
+    font-size: 20px;
+    }
+    .flex-grid {
+    display: block;
+    }
+}
+body{
+    background-color:#E0E0E0;
+
+    
+}
+
+@media screen and (max-width: 480px) {
+
+}
