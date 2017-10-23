@@ -1,18 +1,25 @@
 img {
     max-width: 100%;
 }
+
 @media screen and (min-width: 480px) {
     img {
         align-items: center;
         max-width: 100%;
+    
+    } 
+    .flex-grid {
+        display: flex;
+        flex-direction: row;
     }
 }
 @media screen and (max-width: 480px) {
     h1 {
     font-size: 20px;
     }
+   
     .flex-grid {
-    display: block;
+        flex-direction: column;
     }
 }
 body{
