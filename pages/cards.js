@@ -23,16 +23,18 @@ const Page = () => (
     <div>
         <Head>
             <title>My seventh page!</title>
-            <link rel="stylesheet" href="static/main.css" />
+           
             <link rel="stylesheet" href="static/cards.css" />
-            <meta name="description" content="Let's make the web great again" />
-            <meta name="keywords" content="sample, react, demo, awesome" />
+            <meta name="description" content="List of cards" />
+            <meta name="keywords" content="cards" />
+            
         </Head>
         <h1>Cards!</h1>
 
         <div className="card-container">
-            {cards.map((item, index) => (<Card image= {item.image} name={item.name} text={item.text} key={index}/>)
-            )}
+            {cards.map((item, index) => (
+                <Card image= {item.image} name={item.name} text={item.text} key={index}/>
+                ))}
 
 
         </div>
@@ -40,9 +42,6 @@ const Page = () => (
 
 
 
-
 )
-
-
 
 export default Page

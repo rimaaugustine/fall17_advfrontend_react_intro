@@ -68,15 +68,20 @@ export default class Page11 extends React.Component {
                             title="ReDI: Advanced Frontend"
                             zDepth={0}
                         />
+                      
                         <Drawer
                             docked={false}
-                            width={200}
+                            width={250}
                             open={this.state.open}
                             onRequestChange={(open) => this.setState({ open })}
+                
                         >
+                        <div className="menu-drawer">
                             <MenuItem onClick={() => this.setState({open: false})}>Menu Item</MenuItem>
                             <MenuItem onClick={() => this.setState({open: false})}>Menu Item 2</MenuItem>
+                          </div> 
                         </Drawer>
+                       
                         <Tabs>
                             <Tab label="COURSE">
                                 <div>
